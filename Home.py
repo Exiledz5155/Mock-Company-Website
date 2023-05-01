@@ -10,7 +10,6 @@ col1, col2, col3 = st.columns(3)
 
 df = pandas.read_csv("data.csv", sep=",")
 print(df)
-topics = pandas.read_csv("topics.csv", sep=",")
 
 with col1:
     for index, row in df[:4].iterrows():
