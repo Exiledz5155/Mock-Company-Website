@@ -14,21 +14,21 @@ topics = pandas.read_csv("topics.csv", sep=",")
 
 with col1:
     for index, row in df[:4].iterrows():
-        name = row["first name"] + " " + row["last name"]
+        name = row["first name"].capitalize() + " " + row["last name"].capitalize()
         st.header(name)
         st.write(row["role"])
         st.image(f"images/{(row['image'])}")
 
 with col2:
     for index, row in df[4:8].iterrows():
-        name = row["first name"] + " " + row["last name"]
+        name = row["first name"].capitalize() + " " + row["last name"].capitalize()
         st.header(name)
         st.write(row["role"])
         st.image(f"images/{(row['image'])}")
 
 with col3:
     for index, row in df[8:12].iterrows():
-        name = row["first name"] + " " + row["last name"]
+        name = row["first name"].capitalize() + " " + row["last name"].capitalize()
         st.header(name)
         st.write(row["role"])
         st.image(f"images/{(row['image'])}")
